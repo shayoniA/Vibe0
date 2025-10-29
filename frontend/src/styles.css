@@ -242,6 +242,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 2vw; font-weight: 600;
 }
+@media (max-width: 768px) {
+  .product-info h1 {
+    font-size: 2.75vw;
+  }
+}
+@media (max-width: 600px) {
+  .product-info h1 {
+    font-size: 3.5vw;
+  }
+}
 
 .navbar .links a:hover {
     font-size: 1.4vw;
