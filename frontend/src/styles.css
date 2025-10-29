@@ -38,13 +38,11 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-
-..........................................
 /* Navbar Base */
 .navbar {
   position: sticky;
-  top: 1.3vw; left: 1vw
-  z-index: 1000;
+  top: 1.3vw; width: 92%;
+  z-index: 1000; margin: auto;
   display: flex;
   padding-top: 0; padding-bottom: 0;
   justify-content: space-between;
@@ -59,6 +57,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -88,7 +87,13 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ff8c00;
+  color: #dae4f5; font-size: 1.44vw;
+}
+
+@media (max-width: 1000px) {
+  .nav-links a:hover {
+    color: #dae4f5; font-size: 1.9vw;
+  }
 }
 
 /* Hamburger Menu Icon */
@@ -101,14 +106,14 @@ body {
 
 .menu-icon .bar {
   width: 25px;
-  height: 3px;
+  height: 2px;
   background-color: #fff;
   transition: all 0.3s;
 }
 
 /* When open, animate bars into "X" */
 .menu-icon .bar.open:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
+  transform: rotate(45deg) translateY(10px);
 }
 
 .menu-icon .bar.open:nth-child(2) {
@@ -116,7 +121,7 @@ body {
 }
 
 .menu-icon .bar.open:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+  transform: rotate(-45deg) translateY(-10px);
 }
 
 /* Responsive Styles */
@@ -127,15 +132,17 @@ body {
 
   .nav-links {
     position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #222;
+    top: 7.5vw;
+    right: 2vw;
+    border-radius: 1vw;
+    background-color: rgb(131 115 227);
     flex-direction: column;
-    width: 100%;
+    width: 30%;
     text-align: center;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    gap: 0;
+    transition: max-height 0.25s ease-out;
   }
 
   .nav-links.open {
@@ -144,15 +151,18 @@ body {
   }
 
   .nav-links a {
-    padding: 12px 0;
+    padding: 10px 0;
     border-top: 1px solid #333;
   }
+
+  .nav-links a:hover {
+  color: #dae4f5; font-size: 2.7vw;
+}
 
   .nav-links a:first-child {
     border-top: none;
   }
 }
-....................................................
 
 .plusone {
     padding: 0.75vw;
@@ -271,6 +281,17 @@ body {
   transition: all 0.2s ease;
   font-family: "Montserrat", sans-serif;
   font-weight: 500; font-size: 1.2vw;
+}
+
+@media (max-width: 768px) {
+  .procartbtn {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .procartbtn {
+    font-size: 2.5vw;
+  }
 }
 
 .product-card button:hover {
@@ -594,6 +615,28 @@ body {
   transition: all 0.2s ease;
   font-family: "Montserrat", sans-serif;
   font-weight: 500; font-size: 1.2vw;
+}
+
+@media (max-width: 768px) {
+  .filter-btn {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .filter-btn {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    font-size: 6.5vw;
+  }
 }
 
 .product-grid-ymal {
