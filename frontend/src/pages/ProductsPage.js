@@ -78,6 +78,19 @@ export default function ProductsPage() {
     };
   }, [showFilter]);
 
+  useEffect(() => {
+  if (showFilter) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
+
+  // Cleanup (in case component unmounts while filter is open)
+  return () => {
+    document.body.style.overflow = 'auto';
+  };
+}, [showFilter]);
+
   const handleFilterApply = () => {
     const selectedCategories = Object.entries(categories)
       .filter(([_, val]) => val)
