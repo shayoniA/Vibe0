@@ -312,6 +312,7 @@ body {
   padding: 2rem;
   background-color: rgb(173, 186, 229);
   height: 100vh;
+  margin-top: 2.25vw;
 }
 
 .cart-list {
