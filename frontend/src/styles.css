@@ -38,7 +38,13 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+
+..........................................
+/* Navbar Base */
 .navbar {
+  position: sticky;
+  top: 1.3vw; left: 1vw
+  z-index: 1000;
   display: flex;
   padding-top: 0; padding-bottom: 0;
   justify-content: space-between;
@@ -47,8 +53,106 @@ body {
   color: var(--navbar-text);
   padding: 0.5rem 2rem;
   border-radius: 2vw;
-  margin: 1vw; margin-top: 1.3vw;
 }
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-family: "Yesteryear", cursive;
+  font-weight: 100; font-size: 3vw;
+}
+
+/* Desktop Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+}
+
+.nav-links a {
+  color: var(--navbar-text);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500; cursor: pointer;
+  width: 5vw; display: inline-block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ff8c00;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+/* When open, animate bars into "X" */
+.menu-icon .bar.open:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.menu-icon .bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon .bar.open:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #222;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .nav-links.open {
+    max-height: 200px;
+    transition: max-height 0.3s ease-in;
+  }
+
+  .nav-links a {
+    padding: 12px 0;
+    border-top: 1px solid #333;
+  }
+
+  .nav-links a:first-child {
+    border-top: none;
+  }
+}
+....................................................
 
 .plusone {
     padding: 0.75vw;
@@ -68,23 +172,6 @@ body {
 
 .plusone:active {
     font-size: 1.35vw;
-}
-
-.logo {
-    margin: 0;
-    font-family: "Yesteryear", cursive;
-  font-weight: 100; font-size: 3vw;
-}
-
-.navbar .links a {
-  color: var(--navbar-text);
-  text-decoration: none;
-  margin-left: 1.5rem;
-  font-weight: 500; cursor: pointer;
-  width: 5vw; display: inline-block;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  transition: all 0.2s ease;
 }
 
 .firstimg {
