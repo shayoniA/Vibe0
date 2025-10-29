@@ -400,16 +400,18 @@ body {
     margin-bottom: 4vw;
     border: 0.2vw solid rgb(117, 98, 224);
     transition: all 0.1s ease;
+    max-width: 40%; text-align: center;
 }
 
 @media (max-width: 768px) {
-  .procarcheckout-btntbtn {
-    font-size: 2.6vw;
+  .checkout-btn {
+    font-size: 2.6vw; width: 30%;
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
   .checkout-btn {
-    font-size: 3vw;
+    font-size: 3vw; width: 40%;
   }
 }
 
@@ -885,10 +887,9 @@ body {
     align-self: flex-start;
   }
 
-  .totalprice, .checkout-btn {
+  .totalprice {
     text-align: center;
     float: none;
-    width: 100%;
   }
 }
 
@@ -926,9 +927,26 @@ body {
     align-self: flex-start;
   }
 
-  .totalprice, .checkout-btn {
+  .totalprice {
     text-align: center;
     float: none;
     width: 100%;
+  }
+}
+
+@media (max-width: 810px) {
+  .receive p {
+    font-size: 2.15vw;
+  }
+  .receive {
+    padding: 5vw; padding-bottom: 7vw;
+  }
+}
+@media (max-width: 650px) {
+  .receive p {
+    font-size: 2.45vw;
+  }
+  .receive {
+    padding: 8vw; padding-bottom: 10vw;
   }
 }
