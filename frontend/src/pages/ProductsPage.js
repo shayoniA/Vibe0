@@ -70,6 +70,14 @@ export default function ProductsPage() {
     }
   });
 
+  useEffect(() => {
+    if (showFilter) document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = 'auto';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [showFilter]);
+
   const handleFilterApply = () => {
     const selectedCategories = Object.entries(categories)
       .filter(([_, val]) => val)
