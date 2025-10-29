@@ -192,7 +192,7 @@ body {
 
 .product-card h3 {
     font-family: "Lora", serif;
-    font-weight: 900;
+    font-weight: 900; height: 4vw;
 }
 
 .price {
@@ -511,7 +511,7 @@ body {
 
 .product-grid-ymal {
     display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 20px;
   padding: 20px;
 }
@@ -535,7 +535,7 @@ body {
 
 .recommended-section {
   margin-top: 3rem;
-  padding: 2rem;
+  padding: 1rem;
   border-top: 2px solid var(--navbar-bg);
 }
 
