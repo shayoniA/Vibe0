@@ -1,7 +1,7 @@
 🛍️ **VibeCommerce** — An elegant, responsive e-commerce web app, featuring cart management, category-based filtering, and product recommendations.
-Here is the link to a video of the website:  https://drive.google.com/file/d/1b7ADr80Zq6bChc_wTkJgK24QugOvV8He/view?usp=sharing
+Here is the link to a **video** of the website:  https://drive.google.com/file/d/1b7ADr80Zq6bChc_wTkJgK24QugOvV8He/view?usp=sharing
 
-To see the VibeCommerce website, click here:  https://vibe0f.onrender.com/
+To see the VibeCommerce **website**, click here:  https://vibe0f.onrender.com/
 
 ![9e08b786-1f7e-47af-b1b7-728069f4c391](https://github.com/user-attachments/assets/c91f956d-f5c8-4d23-9dda-c7cc5c745716)
 
