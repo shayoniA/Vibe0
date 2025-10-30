@@ -13,12 +13,11 @@ To see the VibeCommerce **website**, click here:  https://vibe0f.onrender.com/
 
 ✨ **Features**
 
-1. Product Listing Page — Displays all products in a neat grid.
-2. Category & Price Filtering — Filter by categories like Clothing, Electronics, Home decor, and also by price range.
-3. Add to / Remove from / Update quantity of an item in Cart
-4. Product image Animation — Products that have additional images show cyclic sliding animation when hovered over, in the home page.
-5. Checkout with Receipt — Shows total price of cart items, and provides a receipt with order details and ID, on checkout.
-6. Recommendations (You May Also Like section)
+1. **Category & Price Filterin**g — Filter by categories like Clothing, Electronics, Home decor, and also by price range.
+2. **Add to / Remove from / Update quantity of an item in Cart**
+3. Product image Animation — Products that have additional images show cyclic sliding animation when hovered over, in the home page.
+4. Checkout with Receipt — Shows total price of cart items, and provides a receipt with order details and ID, on checkout.
+5. **Recommendations (You May Also Like section)**
   🔹Recommendation Logic:  Since we have a small dataset (8 products), performing Machine learning Clustering to provide recommendations isn’t ideal. Instead, I used a logical approach:  
    - Group products by category overlap with the cart items.  
    - Calculate the average price (x) of items in the cart.  
@@ -27,7 +26,6 @@ To see the VibeCommerce **website**, click here:  https://vibe0f.onrender.com/
 
 ![c0f80fca-8d7e-4e7d-ab9c-a7e2cfb57aaf](https://github.com/user-attachments/assets/42de9241-8723-4ec3-bd70-045ccc693572)
 
-7. Responsive Design — Works across desktop, tablet, and mobile screens.
 
 🚀 **Tech Stack**
 
@@ -91,6 +89,6 @@ This project was developed for Nexora, as part of a technical internship challen
 
 **Sayani Adhikary** | sayani.adhikary23b@iiitg.ac.in
 
-My **resume**:  https://drive.google.com/file/d/1AfYmclLnPFw54RCP_NlwuJmeoMySiE_r/view?usp=sharing
+**My resume**:  https://drive.google.com/file/d/1AfYmclLnPFw54RCP_NlwuJmeoMySiE_r/view?usp=sharing
 
 LinkedIn:  https://www.linkedin.com/in/sayani-adhikary-825349298/
