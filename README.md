@@ -11,9 +11,6 @@ To see the VibeCommerce **website**, click here:  https://vibe0f.onrender.com/
 
 ![c37abb30-667f-4b9f-bcd2-49a7b717abb0](https://github.com/user-attachments/assets/4d4ded90-2b6f-4873-8948-03dea4473735)
 
-![f6b4231f-4959-4645-aa43-b58a29798f58](https://github.com/user-attachments/assets/78dd6302-d0b7-4a6d-9cb5-462230925c63)
-
-
 ✨ **Features**
 
 1. Product Listing Page — Displays all products in a neat grid.
